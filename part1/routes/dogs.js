@@ -15,7 +15,10 @@ const pool = mysql.createPool({
     try {
         const [rows] = await pool.query(
             SELECT
-             d.name
+             d.name AS dog_name,
+             d.size,
+             u.username AS owner_username
+             
         )
     }
   }
