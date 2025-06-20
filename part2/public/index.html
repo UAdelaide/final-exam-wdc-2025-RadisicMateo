@@ -48,6 +48,8 @@
               headers: { 'content-Type': 'application/json' },
               body: JSON.stringify({ email: this.email, password: this.password })
             });
+            const result = await res.json();
+            if (!res.ok)
           }
         }
       }
