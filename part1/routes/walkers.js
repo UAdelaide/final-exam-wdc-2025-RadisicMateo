@@ -11,5 +11,8 @@ const pool = mysql.createPool({
   });
 
   router.get('/summary', async function(req,res) {
-    try 
-  }
+    try {
+        
+
+    }
+  });
