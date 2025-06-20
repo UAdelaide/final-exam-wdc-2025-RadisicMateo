@@ -31,7 +31,8 @@
         methods: {
             loadDog() {
                 fetch('https://dog.ceo/api/breeds/image/random')
-                .then(r->)
+                .then(r => r.json())
+                .then(data => { })
             }
         }
     })
