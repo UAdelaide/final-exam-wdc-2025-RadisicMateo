@@ -39,7 +39,9 @@ a {
 .bad-button {
   background: darkblue;
   color: lightblue;
-  border: 3px double #
+  border: 3px double red;
+  font-size: 16px;
+  
 
 }
 
