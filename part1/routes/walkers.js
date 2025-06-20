@@ -16,7 +16,8 @@ const pool = mysql.createPool({
             SELECT
                 u.username AS walker_username,
                 COUNT(DISTINCT wr.rating_id) AS total_ratings,
-                AVG(wr.rating) 
+                AVG(wr.rating) AS average_rating,
+                COUNT(DISTINCT WebGL2RenderingContext.)
 
 
 
