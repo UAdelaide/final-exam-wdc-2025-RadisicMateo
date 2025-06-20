@@ -23,6 +23,6 @@ const pool = mysql.createPool({
         );
         res.json(rows);
     } catch (err) {
-        res.status(500).json{{}}
+        res.status(500).json{{ error: 'Failed to catch dogs.' }}
     }
   }
