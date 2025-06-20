@@ -26,3 +26,5 @@ const pool = mysql.createPool({
         res.status(500).json({ error: 'Failed to catch dogs.' });
     }
   });
+
+  module.exports = router;
