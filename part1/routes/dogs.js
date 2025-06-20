@@ -9,3 +9,6 @@ const pool = mysql.createPool({
     password: '',
     database: 'DogWalkService'
   });
+
+
+  router.get('/' )
