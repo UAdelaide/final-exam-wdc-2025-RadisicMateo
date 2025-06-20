@@ -24,6 +24,8 @@ const pool = mysql.createPool({
             WHERE u.role = 'walker'
             GROUP BY u.user_id, u.username
         `);
-
+        res.json(rows);
+    } catch(err) {
+        
     }
   });
