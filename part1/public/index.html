@@ -65,7 +65,8 @@
                 .then(data => { this.dogPic = data.message; });
             },
             moveButton() {
-                this.buttonX = Math.floor(Math.random())
+                this.buttonX = Math.floor(Math.random() * (window.innerWidth - 180));
+                this.buttonY = Math.floor(Math.random() * (window.innerHeight - 180));
             }
         }
     }).mount('#app');
