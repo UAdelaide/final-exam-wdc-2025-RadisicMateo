@@ -15,11 +15,11 @@
 
     <form @submit.prevent="handleLogin" class="mb-3 card card-body shadow">
       <div class="mb-3">
-        <lavel for="email" class="form-label">Email</lavel>
+        <label for="email" class="form-label">Email</label>
         <input v-model="email" type="email" class="form-control" id="email" required autocomplete="username">
       </div>
       <div class="mb-3">
-        <lavel for="password" class="form-label">password</lavel>
+        <label for="password" class="form-label">password</label>
         <input v-model="password" type="password" class="form-control" id="password" required autocomplete="current-password">
       </div>
       <button type="submit" class="btn btn-primary w-100">Log In</button>
