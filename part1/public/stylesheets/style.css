@@ -49,6 +49,11 @@ a {
   outline: none;
 }
 
+ul {
+  margin-top: 14px;
+  margin-bottom: 32px;
+}
+
 
 
 button, input {
