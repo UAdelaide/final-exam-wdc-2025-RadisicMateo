@@ -36,11 +36,17 @@
         "NUTELLA WAS INVENTED IN ITALY IN THE 1940S.",
         "NUTELLA WAS INVENTED IN ITALY IN THE 1940S.",
     ];
-    
+
     const { createApp } = Vue;
     createApp({
         data() {
-            return { dogPic: '' };
+            return { dogPic: '',
+            nutellaFacts,
+            buttonClicks: 0,
+            buttonX
+
+
+        };
         },
         mounted() {
             this.loadDog();
