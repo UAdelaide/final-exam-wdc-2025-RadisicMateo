@@ -11,4 +11,6 @@ const pool = mysql.createPool({
   });
 
 
-  router.get('/' )
+  router.get('/', async function(req, res)) {
+    
+  }
