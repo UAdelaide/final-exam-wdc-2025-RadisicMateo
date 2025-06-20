@@ -93,7 +93,7 @@
             if (!res.ok) throw new Error('Could not load dogs');
             dogs.value = await res.json();
           } catch(err) {
-            error.
+            error.value = err.message;
           }
         }
 
