@@ -94,7 +94,7 @@
             const dogs = await res.json();
             console.log(dogs);
           } catch(err) {
-            console.error(err.message);
+            error.value = err.message;
           }
         }
 
