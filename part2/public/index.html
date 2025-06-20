@@ -55,8 +55,10 @@
             } else if (result.user.role === 'walker') {
               window.location.href = 'walker-dashboard.html';
             } else {
-              this.error = 
+              this.error = 'Unknown user role!';
             }
+          } catch (err) {
+            this.error = err.message;
           }
         }
       }
