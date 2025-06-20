@@ -10,4 +10,6 @@ const pool = mysql.createPool({
     database: 'DogWalkService'
   });
 
-  router.get('/summary')
+  router.get('/summary', async function(req,res) {
+    try 
+  }
