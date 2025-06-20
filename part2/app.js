@@ -10,12 +10,12 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 const session = require('express-session');
 
-app.use(session) {
+app.use(session( {
     secret: 'dogwalk-secret',
     resave: false,
     saveUninitialized: true,
-    
-}
+
+)}
 
 
 // Routes
