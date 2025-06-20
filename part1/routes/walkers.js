@@ -12,7 +12,7 @@ const pool = mysql.createPool({
 
   router.get('/summary', async function(req,res) {
     try {
-        const [rows] = await pool.query('
+        const [rows] = await pool.query(`
             SELECT
                 u.username AS walker_username,
                 COUNT(DISTINCT wr.rating_id) AS total_ratings,
@@ -22,11 +22,8 @@ const pool = mysql.createPool({
             LEFT JOIN WalkRatings wr ON wr.walker_id = u.user_id
             LEFT JOIN WalkRequests wr2 ON wr2.accepted_walker_id = u.user_id AND wr2.status = 'completed'
             WHERE u.role = 'walker'
-            GROUP BY u.user_id, 
-
-
-
-        ')
+            GROUP BY u.user_id, u.username
+        `);
 
     }
   });
