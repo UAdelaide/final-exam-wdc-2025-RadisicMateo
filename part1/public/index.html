@@ -20,7 +20,7 @@
 <div>
     <p>RANDOM NUTELLA FACTS:</p>
     <ul>
-        <li v-for="fact in nutellaFacts">{{ fact }}</li>
+        <li v-for="fact in nutellaFacts" :key="fact">{{ fact }}</li>
     </ul>
 </div>
 
