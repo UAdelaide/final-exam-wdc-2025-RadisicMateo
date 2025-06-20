@@ -10,7 +10,7 @@ const pool = mysql.createPool({
     database: 'DogWalkService'
 });
 
-router.get('/open', async function(req,rs) {
+router.get('/open', async function(req,res) {
     try {
         const [rows] = await pool.query(`
             SELECT
