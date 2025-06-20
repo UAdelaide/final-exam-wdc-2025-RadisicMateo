@@ -14,7 +14,7 @@ router.get('/open', async function(req,rs) {
     try {
         const [rows] = await pool.query('
         SELECT
-            wr
+            wr.requests
         ')
     }
 
