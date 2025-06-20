@@ -14,8 +14,8 @@ app.use(session( {
     secret: 'dogwalk-secret',
     resave: false,
     saveUninitialized: true,
-
-)}
+    cookie: { secure: false }
+}));
 
 
 // Routes
