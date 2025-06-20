@@ -19,7 +19,7 @@ const pool = mysql.createPool({
                 AVG(wr.rating) AS average_rating,
                 COUNT(DISTINCT wr2.request_id) AS completed_walks
             FROM Users u
-            LEFT JOIN WalkRatings wr ON 
+            LEFT JOIN WalkRatings wr ON wr.walker_id 
 
 
 
