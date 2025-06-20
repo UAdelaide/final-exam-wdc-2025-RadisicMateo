@@ -87,6 +87,15 @@
         const message = ref('');
         const error = ref('');
 
+        async function loadDogs() {
+          try {
+            const res = await fetch('/api/users/my-dogs');
+            if (!res.ok) throw new Error('Could not load dogs');
+            dogs.value = await res.json();
+          } catch(err) {
+            error.value = err.message;
+          }
+        }
 
         async function loadWalks() {
           try {
