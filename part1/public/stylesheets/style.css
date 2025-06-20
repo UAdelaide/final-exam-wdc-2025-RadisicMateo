@@ -5,6 +5,10 @@ body {
   font: 8px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1, p, li, button {
+  text-transform: uppercase;
+}
+
 a {
   color: #00B7FF;
 }
