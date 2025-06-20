@@ -27,8 +27,9 @@ router.get('/open', async function(req,rs) {
         `);
         res.json(rows);
     } catch (err) {
-        res.status(500).json({ error: 'fail'})
+        res.status(500).json({ error: 'fail to fetch open walk requests' });
     }
 
-
 });
+
+module.exports = router;
