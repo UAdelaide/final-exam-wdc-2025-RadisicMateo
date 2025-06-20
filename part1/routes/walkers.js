@@ -15,7 +15,8 @@ const pool = mysql.createPool({
         const [rows] = await pool.query('
             SELECT
                 u.username AS walker_username,
-                COUNT(DISTINCT wr.rating_id)
+                COUNT(DISTINCT wr.rating_id) AS total_ratings,
+                AVG(wr.rating) 
 
 
 
