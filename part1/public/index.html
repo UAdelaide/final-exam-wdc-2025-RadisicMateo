@@ -51,7 +51,12 @@
             this.loadDog();
         },
         watch: {
-            
+            buttonClicks(val) {
+                if (val>=3) {
+                    this.loadDog();
+                    this.buttonClicks
+                }
+            }
 
         },
         methods: {
