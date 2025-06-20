@@ -13,14 +13,14 @@ const pool = mysql.createPool({
 
   router.get('/', async function(req, res) {
     try {
-        const [rows] = await pool.query('
+        const [rows] = await pool.query(`
             SELECT
-             d.name AS dog_name,
-             d.size,
-             u.username AS owner_username
+                d.name AS dog_name,
+                d.size,
+                u.username AS owner_username
             FROM Dogs d
             JOIN Users u ON d.owner_id = u.user_id
-        ');
+        `);
         res.json(rows);
     } catch (err) {
         res.status(500).json({ error: 'Failed to fetch dogs.' });
