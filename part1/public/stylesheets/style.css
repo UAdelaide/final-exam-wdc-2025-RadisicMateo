@@ -11,7 +11,7 @@ a {
 }
 
 @keyframes blink {
-  from { background: #ff0; }
+  from { background: white; }
   to { background: #f0f; }
 }
 
