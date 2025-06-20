@@ -11,7 +11,7 @@ const pool = mysql.createPool({
   });
 
 
-  router.get('/', async function(req, res)) {
+  router.get('/', async function(req, res) {
     try {
         const [rows] = await pool.query(
             SELECT
