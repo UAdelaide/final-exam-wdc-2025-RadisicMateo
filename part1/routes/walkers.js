@@ -13,6 +13,9 @@ const pool = mysql.createPool({
   router.get('/summary', async function(req,res) {
     try {
         const [rows] = await pool.query('
+            SELECT
+                u.username AS walker_username,
+
 
 
         ')
