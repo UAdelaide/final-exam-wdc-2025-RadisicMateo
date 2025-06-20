@@ -8,10 +8,14 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
+const session = require('express-session');
+
+
+
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
-const session
+
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
