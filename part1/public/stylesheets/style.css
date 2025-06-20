@@ -15,7 +15,10 @@ a {
 
 .dog-row {
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 35px 0;
 }
 
 
