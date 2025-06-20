@@ -20,7 +20,7 @@ const pool = mysql.createPool({
                 COUNT(DISTINCT wr2.request_id) AS completed_walks
             FROM Users u
             LEFT JOIN WalkRatings wr ON wr.walker_id = u.user_id
-            LEFT JOIN WalkRequests wr2 ON
+            LEFT JOIN WalkRequests wr2 ON wr2.accepted_walker_id = u.user_id
 
 
 
