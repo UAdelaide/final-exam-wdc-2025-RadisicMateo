@@ -14,7 +14,10 @@ router.get('/open', async function(req,rs) {
     try {
         const [rows] = await pool.query('
         SELECT
-            wr.requests
+            wr.request_id,
+            d.name AS dog_name,
+            wr.requested_time,
+            
         ')
     }
 
