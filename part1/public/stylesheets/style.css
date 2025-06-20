@@ -3,17 +3,13 @@ body {
   color: pink;
   padding: 50px;
   font: 8px "Lucida Grande", Helvetica, Arial, sans-serif;
-  animation: blink 0.3s infinite alternate;
 }
 
 a {
   color: #00B7FF;
 }
 
-@keyframes blink {
-  from { background: blue; }
-  to { background: green; }
-}
+
 
 button, input {
 font-size: 6px;
