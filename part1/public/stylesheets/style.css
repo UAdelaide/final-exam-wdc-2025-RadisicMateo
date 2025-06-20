@@ -1,13 +1,19 @@
 body {
   background: #ff0;
   color: #00f;
-  font-size: 8px;
   padding: 50px;
-  font: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 8px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+@keyframes blink {
+  from { background: #ff0; }
+  to { background: #f0f; }
+}
+
+
 
 
