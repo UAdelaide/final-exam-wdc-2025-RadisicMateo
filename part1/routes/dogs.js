@@ -19,7 +19,7 @@ const pool = mysql.createPool({
              d.size,
              u.username AS owner_username
             FROM Dogs d
-            JOIN 
+            JOIN Users u ON d.owner_id = u.user_id
         )
     }
   }
