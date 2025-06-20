@@ -22,5 +22,7 @@ const pool = mysql.createPool({
             JOIN Users u ON d.owner_id = u.user_id
         );
         res.json(rows);
+    } catch (err) {
+        res.status(500).json{{}}
     }
   }
