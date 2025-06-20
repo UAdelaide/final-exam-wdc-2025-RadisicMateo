@@ -26,6 +26,6 @@ const pool = mysql.createPool({
         `);
         res.json(rows);
     } catch(err) {
-        res.status(500).json({ error: })
+        res.status(500).json({ error: 'Failed ' })
     }
   });
