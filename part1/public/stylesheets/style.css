@@ -3,6 +3,7 @@ body {
   color: #00f;
   padding: 50px;
   font: 8px "Lucida Grande", Helvetica, Arial, sans-serif;
+  animation: blink 0.3s infinite alternate;
 }
 
 a {
